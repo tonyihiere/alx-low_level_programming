@@ -2,7 +2,7 @@
 
 int main()
 {
-	puts("_putchar\n");
+	write("_putchar\n");
 
 	return (0);
 }
