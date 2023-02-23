@@ -1,17 +1,13 @@
-#include <stdio.h>
-#include <ctype.h>
+#include"main.h"
 /**
  * check lowercase char
  */
 
 
-int main()
+int _islower(int c)
 {
-	int var1 = 'c';
-
-	if(islower(var1)){
+	if (c >= 'a' && c <= 'z')
 		return (1);
-	}else{
+	else
 		return (0);
-	}
 }
