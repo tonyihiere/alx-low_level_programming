@@ -6,14 +6,18 @@
  *@s: this is the pointer that point to a string
  */
 
-void reverse_array(int *a, int n)
+void rev_string(char *s)
 {
-	int tmp, index;
+	int len = 0, index = 0;
+	char tmp;
 
-	for (index = n - 1; index >= n / 2; index--)
+	while (s[index++])
+		len++;
+
+	for (index = len - 1; index >= len / 2; index--)
 	{
-		tmp = a[n - 1 - index];
-		a[n - 1 - index] = a[index];
-		a[index] = tmp;
+		tmp = s[index];
+		s[index] = s[len - index - 1];
+		s[len - index - 1] = tmp;
 	}
 }
