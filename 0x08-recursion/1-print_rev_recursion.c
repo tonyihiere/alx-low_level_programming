@@ -1,10 +1,10 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * main - print rev recursion
- * Return: always 0.
- */
-
+  * _print_rev_recursion - Print a string in reverse
+  * @s: the string to reverse
+  * Return: Nothing.
+  */
 void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
